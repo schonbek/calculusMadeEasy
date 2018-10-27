@@ -3,9 +3,10 @@
 \title{Introducing a Useful Dodge}
 
 
-
 \begin{document}
-
+\begin{abstract}
+\end{abstract}
+\maketitle
 
 Sometimes one is stumped by finding that the expression
 to be differentiated is too complicated to
@@ -39,11 +40,11 @@ and differentiate it with respect to $x$,
 Then all that remains is plain sailing;
 \begin{align*}
  \text{for}\;
-\frac{dy}{dx} &= \frac{dy}{du} × \frac{du}{dx}; \\
+\frac{dy}{dx} &= \frac{dy}{du} \times \frac{du}{dx}; \\
  \text{that is,}\;
 \frac{dy}{dx}
-  &= \frac{3}{2} u^{\frac{1}{2}} × 2x \\
-  &= \tfrac{3}{2} (x^2 + a^2)^{\frac{1}{2}} × 2x \\
+  &= \frac{3}{2} u^{\frac{1}{2}} \times 2x \\
+  &= \tfrac{3}{2} (x^2 + a^2)^{\frac{1}{2}} \times 2x \\
   &= 3x(x^2 + a^2)^{\frac{1}{2}};
 \end{align*}
 and so the trick is done.
@@ -65,7 +66,7 @@ Let $a+x = u$.
 \frac{du}{dx} &= 1;\quad y=u^{\frac{1}{2}};\quad
   \frac{dy}{du} = \tfrac{1}{2} u^{-\frac{1}{2}}
                 = \tfrac{1}{2} (a+x)^{-\frac{1}{2}}.\\
-\frac{dy}{dx} &= \frac{dy}{du} × \frac{du}{dx} = \frac{1}{2\sqrt{a+x}}.
+\frac{dy}{dx} &= \frac{dy}{du} \times \frac{du}{dx} = \frac{1}{2\sqrt{a+x}}.
 \end{align*}
 
 (2) Differentiate  $y = \dfrac{1}{\sqrt{a+x^2}}$.
@@ -74,7 +75,7 @@ Let $a + x^2 = u$.
 \begin{align*}
 \frac{du}{dx} &= 2x;\quad y=u^{-\frac{1}{2}};\quad
   \frac{dy}{du} = -\tfrac{1}{2}u^{-\frac{3}{2}}.\\
-\frac{dy}{dx} &= \frac{dy}{du}×\frac{du}{dx} = - \frac{x}{\sqrt{(a+x^2)^3}}.
+\frac{dy}{dx} &= \frac{dy}{du}\times\frac{du}{dx} = - \frac{x}{\sqrt{(a+x^2)^3}}.
 \end{align*}
 
 
@@ -84,7 +85,7 @@ Let $m - nx^{\frac{2}{3}} + px^{-\frac{4}{3}} = u$.
 \begin{gather*}
 \frac{du}{dx} = -\tfrac{2}{3} nx^{-\frac{1}{3}} - \tfrac{4}{3} px^{-\frac{7}{3}};\\
 y = u^a;\quad \frac{dy}{du} = a u^{a-1}. \\
-\frac{dy}{dx} = \frac{dy}{du}×\frac{du}{dx}
+\frac{dy}{dx} = \frac{dy}{du}\times\frac{du}{dx}
   = -a\left(m -nx^{\frac{2}{3}} + \frac{p}{x^{\frac{4}{3}}}\right)^{a-1}
      (\tfrac{2}{3} nx^{-\frac{1}{3}} + \tfrac{4}{3} px^{-\frac{7}{3}}).
 \end{gather*}
@@ -95,7 +96,7 @@ Let $u = x^3 - a^2$.
 \begin{align*}
 \frac{du}{dx} &= 3x^2;\quad y = u^{-\frac{1}{2}};\quad
   \frac{dy}{du}=-\frac{1}{2}(x^3 - a^2)^{-\frac{3}{2}}. \\
-\frac{dy}{dx} &= \frac{dy}{du} × \frac{du}{dx} = -\frac{3x^2}{2\sqrt{(x^3 - a^2)^3}}.
+\frac{dy}{dx} &= \frac{dy}{du} \times \frac{du}{dx} = -\frac{3x^2}{2\sqrt{(x^3 - a^2)^3}}.
 \end{align*}
 
 <a name="examples4"/>
@@ -137,7 +138,7 @@ We may write this
 y = x^{\frac{3}{2}}(1+x^2)^{-\frac{1}{2}}; \\
 \frac{dy}{dx}
   = \tfrac{3}{2} x^{\frac{1}{2}}(1 + x^2)^{-\frac{1}{2}}
-  + x^{\frac{3}{2}} × \frac{d\bigl[(1+x^2)^{-\frac{1}{2}}\bigr]}{dx}.
+  + x^{\frac{3}{2}} \times \frac{d\bigl[(1+x^2)^{-\frac{1}{2}}\bigr]}{dx}.
 \end{gather*}
 
 Differentiating $(1+x^2)^{-\frac{1}{2}}$, as shown in example (2)
@@ -166,12 +167,12 @@ Now let $(x^2+x+a)^{\frac{1}{2}}=v$ and $(x^2+x+a) = w$.
 \frac{dw}{dx}
   &= 2x+1;\quad v = w^{\frac{1}{2}};\quad \frac{dv}{dw} = \tfrac{1}{2}w^{-\frac{1}{2}}. \\
 \frac{dv}{dx}
-  &= \frac{dv}{dw} × \frac{dw}{dx} = \tfrac{1}{2}(x^2+x+a)^{-\frac{1}{2}}(2x+1). \\
+  &= \frac{dv}{dw} \times \frac{dw}{dx} = \tfrac{1}{2}(x^2+x+a)^{-\frac{1}{2}}(2x+1). \\
    Hence
 \frac{du}{dx}
   &= 1 + \frac{2x+1}{2\sqrt{x^2+x+a}}, \\
 \frac{dy}{dx}
-  &= \frac{dy}{du} × \frac{du}{dx}\\
+  &= \frac{dy}{du} \times \frac{du}{dx}\\
   &= 3\left(x+\sqrt{x^2+x+a}\right)^2
       \left(1 +\frac{2x+1}{2\sqrt{x^2+x+a}}\right).
 \end{align*}
@@ -193,7 +194,7 @@ Let $u = (a^2-x^2)^{-\frac{1}{6}}$ and $v = (a^2 - x^2)$.
 u &= v^{-\frac{1}{6}};\quad
   \frac{du}{dv} = -\frac{1}{6}v^{-\frac{7}{6}};\quad
   \frac{dv}{dx} = -2x. \\
-\frac{du}{dx} &= \frac{du}{dv} × \frac{dv}{dx} = \frac{1}{3}x(a^2-x^2)^{-\frac{7}{6}}.
+\frac{du}{dx} &= \frac{du}{dv} \times \frac{dv}{dx} = \frac{1}{3}x(a^2-x^2)^{-\frac{7}{6}}.
 \end{align*}
 
 Let $w = (a^2 + x^2)^{\frac{1}{6}}$ and $z = (a^2 + x^2)$.
@@ -201,7 +202,7 @@ Let $w = (a^2 + x^2)^{\frac{1}{6}}$ and $z = (a^2 + x^2)$.
 w &= z^{\frac{1}{6}};\quad
   \frac{dw}{dz} = \frac{1}{6}z^{-\frac{5}{6}};\quad
   \frac{dz}{dx} = 2x. \\
-\frac{dw}{dx} &= \frac{dw}{dz} × \frac{dz}{dx} = \frac{1}{3} x(a^2 + x^2)^{-\frac{5}{6}}.
+\frac{dw}{dx} &= \frac{dw}{dz} \times \frac{dz}{dx} = \frac{1}{3} x(a^2 + x^2)^{-\frac{5}{6}}.
 \end{align*}
 
 Hence
@@ -240,7 +241,7 @@ Let $\bigl[(a-x)x\bigr]^{\frac{1}{2}} = u$ and let $(a-x)x = w$; then $u = w^{\f
 
 \begin{align*}
 &\frac{dw}{dx} = a-2x.\\
-&\frac{du}{dw} × \frac{dw}{dx} = \frac{du}{dx} = \frac{a-2x}{2\sqrt{(a-x)x}}.
+&\frac{du}{dw} \times \frac{dw}{dx} = \frac{du}{dx} = \frac{a-2x}{2\sqrt{(a-x)x}}.
 \end{align*}
 
 Hence
@@ -309,9 +310,9 @@ We get
 \frac{d\phi}{d\omega} = \frac{1}{\sqrt{2}\omega^2}.
 \]
 
-So that $\dfrac{d\theta}{dx} = \dfrac{1}{\sqrt{2} × \omega^2}
-  × \dfrac{1}{(1+\theta) \sqrt{1-\theta^2}}
-  × \dfrac{3a^2}{2\sqrt{x^3}}$.
+So that $\dfrac{d\theta}{dx} = \dfrac{1}{\sqrt{2} \times \omega^2}
+  \times \dfrac{1}{(1+\theta) \sqrt{1-\theta^2}}
+  \times \dfrac{3a^2}{2\sqrt{x^3}}$.
 
 Replace now first $\omega$, then $\theta$ by its value.
 
